@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประสานทองไดนาโม</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* เพิ่มสไตล์ให้กับรูปภาพ */
+    .auto-scroll-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .hero {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .contact-image {
+      width: 100%;
+      max-width: 600px; /* ปรับขนาดให้พอดีกับหน้าจอ */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <!-- ลบโลโก้ออก -->
+      <h1>ประสานทองไดนาโม</h1>
+      <p>ซ่อมทุกอย่างเกี่ยวกับรถยนต์ เปิดบริการ 24 ชั่วโมง</p>
+      <nav>
+        <ul>
+          <li><a href="#home">หน้าแรก</a></li>
+          <li><a href="#services">บริการ</a></li>
+          <li><a href="#about">เกี่ยวกับเรา</a></li>
+          <li><a href="#contact">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>ยินดีต้อนรับสู่ประสานทองไดนาโม</h2>
+      <p>ให้บริการซ่อมรถยนต์ทุกชนิด ไม่ว่าจะเป็นระบบไฟฟ้า ไดนาโม แอร์รถยนต์ และอีกมากมาย</p>
+      <!-- รูปภาพที่เลื่อนไปหน้าใหม่ -->
+      <img src="1734023107866.jpg" alt="บริการซ่อมรถยนต์" class="auto-scroll-image">
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>บริการของเรา</h2>
+      <ul>
+        <li>ซ่อมไดนาโม</li>
+        <li>ตรวจเช็กระบบไฟฟ้ารถยนต์</li>
+        <li>ซ่อมแอร์รถยนต์</li>
+        <li>เปลี่ยนแบตเตอรี่</li>
+        <li>ตรวจเช็กและซ่อมเบรก</li>
+        <li>บริการฉุกเฉินตลอด 24 ชั่วโมง</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>เกี่ยวกับเรา</h2>
+      <p>ประสานทองไดนาโมมีประสบการณ์ในการซ่อมรถยนต์มากกว่า 10 ปี โดยทีมงานมืออาชีพ พร้อมให้บริการตลอด 24 ชั่วโมงไม่มีวันหยุด</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>ติดต่อเรา</h2>
+      <p>สถานที่ตั้ง: 424 หมู่ 2 ตำบลบ่อแฮ้ว อำเภอเมือง จังหวัดลำปาง</p>
+      <p>โทรศัพท์: 094-376-4535, 061-062-8859</p>
+      <p>อีเมล: <a href="mailto:phomzzaa@gmail.com">phomzzaa@gmail.com</a></p>
+      <p>เปิดบริการ: ทุกวัน ตลอด 24 ชั่วโมง</p>
+      <!-- เพิ่มรูปภาพแทนแผนที่ -->
+      <img src="1734023107866.jpg" alt="ภาพสถานที่" class="contact-image">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 ประสานทองไดนาโม - บริการครบวงจรเรื่องรถยนต์</p>
+    </div>
+  </footer>
+
+  <script>
+    // ทำการเลื่อนอัตโนมัติไปยังหน้า "services" เมื่อโหลดหน้าเว็บเสร็จ
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.hash = "#services";
+      }, 2000); // เลื่อนหลังจาก 2 วินาที
+    };
+  </script>
+</body>
+</html>
